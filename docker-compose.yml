@@ -2,7 +2,9 @@ version: "3.8"
 
 services:
   app:
-    image: app
+    # image: app
+    build:
+      context: .
     environment:
       MONGO_URL: "mongodb://db:27017/test"
     depends_on:
